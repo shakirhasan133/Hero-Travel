@@ -8,9 +8,7 @@ a{
     text-decoration: none;
     color: rgb(66, 66, 71);
 }
-li{
-    list-style: none;
-}
+
 
 /* Default CSS Start*/
 
@@ -20,8 +18,37 @@ li{
 
 }
 .box{
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
+}
+h3{
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0%;
+    margin-bottom: 0;
+    /* text-align: center; */
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    outline: none;
+    color: white;
+}
+
+.heading-text{
+    color: rgb(19, 19, 24);
+    font-family: Mulish;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0%;
+    margin-top: 0;
 }
 /* Default CSS End */
 
@@ -31,11 +58,13 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
 }
 .logo-area{
     display: flex;
     height: 48px;
     align-items: center;
+
 }
 .logo-area h3{
     font-size: 1.8rem;
@@ -50,9 +79,271 @@ li{
     display: inline;
     margin: 1.5rem;
     font-weight: 400;
+    list-style: none;
 }
 /* Header CSS End */
 
 /* Banner Area Start */
 
+.banner-area{
+    text-align: center;
+    height: 500px;
+    background-image: linear-gradient(22deg, rgba(217,217,222,0) 0%, rgba(0,0,0,0.7) 100%), url('/Images/beach1.png');
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.banner-area h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.banner-des{
+    max-width: 600px;
+    font-weight: 400;
+    color: white;
+    margin: 20px;
+}
+.input-container{
+    display: flex;
+    width:800px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    /* padding: 10px 20px; */
+}
+.input-container input,select,button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    outline: none;
+
+}
+.input-container button{
+    background-color: var(--primary-color);
+    color: white;
+}
+.input-container input:focus{
+    outline: none;
+}
+.input-container select{
+    padding: 0 10px;
+}
+.input-container input[type=text], .input-container option {
+    padding: 0 10px;
+}
+
+
+
 /* Banner Area End */
+
+
+/* Popular Tour Area */
+
+.popular-tour-area{
+    display: flex;
+    margin-top: 50px;
+}
+.popular-tour-img img{
+    width: 100%;
+    height: 100%;
+}
+.popular-tour-des p{
+    margin-bottom: 20px;
+}
+/* Popuelar Tour Area End */
+
+/* Choose your destination area start */
+.choose-des-area{
+    margin-top: 50px;
+}
+.choose-des-header
+{
+    text-align: center;
+    margin-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.des-gallary{
+    margin: 0 auto;
+}
+.row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 20px;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 1rem;
+    margin: 20px;
+}
+.row-3{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem;
+    margin: 20px;
+}
+.image-gallary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-gallary p{
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+}
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7{
+
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+#image1:hover,
+#image2:hover,
+#image3:hover,
+#image4:hover,
+#image5:hover,
+#image6:hover,
+#image7:hover{
+
+    background-color: rgba(0,0,0,0.0);
+    background-blend-mode: overlay;
+
+}
+#image1{
+    background-image: url('/Images/beach2.png');
+
+}
+#image2{
+    background-image: url('/Images/sea1.png');
+    
+}
+#image3{
+    background-image: url('/Images/mountain2.png');
+}
+#image4{
+    background-image: url('/Images/mountain3.png');
+}
+#image5{
+    background-image: url('/Images/mountain5.png');
+}
+#image6{
+    background-image: url('/Images/river1.png');
+}
+#image7{
+    background-image: url('/Images/river2.png');
+}
+/* Choose your destination area end */
+
+/* Why Choose Area Start */
+.why-choose-us{
+    margin-top: 50px;
+}
+.choose-box{
+    display:flex ;
+    gap: 50px;
+    margin-top: 50px;
+}
+.choose-box h4{
+    color: rgb(19, 19, 24);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+.choose-box p{
+    color: rgb(19, 19, 24);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.choose1{
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+}
+.choose2{
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(41, 206, 246, 0.2);
+}
+.choose-box-container img{
+    width: 64px;
+    height: 64px;
+}
+.choose1-content, .choose2-content{
+    margin: 50px;
+}
+
+.choose3{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgba(233, 233, 178, 0.733);
+    border: 1px solid rgba(251, 181, 99, 0.2);
+}
+
+
+
+.deal-discount-content-1 i,p{
+    display: inline;
+    margin-left: 20px;
+}
+
+/* Why Choose Area end */
+
+
+/* Responsive Area */
+
+/* For Mobile Device */
+@media screen and (max-width:576px) {
+     .banner-area h1{
+        font-size: 30px;
+    }
+    .logo-area{
+        width: 30%;
+    }
+    .logo-area h3{
+        font-size: 20px;
+        padding: 0;
+    }
+    .logo-area img{
+        width: 100%;
+    }
+    .menu-area{
+        width: 70%;
+        display: none;
+    }
+}
